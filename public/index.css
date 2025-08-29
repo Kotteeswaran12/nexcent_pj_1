@@ -926,3 +926,60 @@ main>.left>button {
         padding: 10px 20px;
     } */
 }
+
+
+.section6
+{
+    margin-top: 50px;
+    text-align: center;
+    background-color: #EEF5FF;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    
+    align-items: center;
+   
+    height: 300px;
+}
+
+.section6 >.content > h1{
+    font-size: 40px;
+    text-transform: capitalize;
+}
+.section6 >.content > button{
+    padding: 10px 30px;
+    border: none;
+    background-color: green;
+    color: white;
+    border-radius: 10px;
+    margin-top: 20px;
+    cursor: pointer;
+}
+
+/* ! footer */
+footer{
+    border-top-left-radius:30px ;
+    border-top-right-radius:30px ;
+    height: 330px;
+    background-color: rgb(42, 41, 41);
+    color: white;
+}
+footer > .companyLogo {
+    width: 250px;
+    height: 100%;
+    /* background-color: red; */
+    display: flex;
+    gap: 30px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 0px 20px;
+}
+footer > .companyLogo > .logo{
+    display: flex;
+    gap: 20px;
+}
+footer > .companyLogo > .logo > img{
+    width:30px;
+    object-fit: contain;
+}
