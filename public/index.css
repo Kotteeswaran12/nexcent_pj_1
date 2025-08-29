@@ -2,7 +2,7 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-   font-family: 'Poppins', sans-serif;
+    font-family: 'Poppins', sans-serif;
 }
 
 nav {
@@ -24,7 +24,7 @@ nav>.logo {
 
 
 nav>.logo>h1 {
-   
+
     font-size: 40px;
     text-transform: capitalize;
     font-weight: bold;
@@ -100,6 +100,28 @@ nav>.btn>button:nth-child(2) {
     display: none;
 }
 
+@media (max-width:1103px) {
+    nav {
+        justify-content: space-between;
+        padding: 0px 20px;
+    }
+
+    nav>.logo {
+        display: flex;
+        gap: 0px;
+    }
+
+    nav>.logo>h1 {
+        gap: 0%;
+        font-size: 1.5rem;
+
+    }
+
+    nav>ul {
+        font-size: 0.9rem;
+        gap: 30px;
+    }
+}
 
 @media (max-width:1010px) and (min-width:800px) {
     nav>.logo {
@@ -182,6 +204,14 @@ main>.left>button {
     margin-left: 40px;
 }
 
+@media (max-width:1317px) {
+    main>.left>h1 {
+        font-size: 3rem;
+
+
+    }
+}
+
 @media (max-width:1120px) {
     main>.left>h1 {
         font-size: 3rem;
@@ -192,6 +222,14 @@ main>.left>button {
     main>.right>img {
 
         width: 300px;
+    }
+}
+
+@media (max-width:895px) {
+    main>.left>h1 {
+        font-size: 2.5rem;
+
+
     }
 }
 
@@ -214,13 +252,27 @@ main>.left>button {
         padding-top: 100px;
 
     }
-    main > .left > button{
+
+    main>.left>button {
         margin-left: 0%;
     }
 }
+
+@media (max-width:596px) {
+    main>.left>h1 {
+        font-size: 2.5rem;
+    }
+}
+
 @media (max-width:520px) {
     main>.left>h1 {
         font-size: 2.5rem;
+    }
+}
+
+@media (max-width:510px) {
+    main>.left>h1 {
+        font-size: 2rem;
     }
 }
 
@@ -230,7 +282,7 @@ main>.left>button {
     }
 
     main>.left>p {
-        font-size: 0.8rem;
+        font-size: 0.9rem;
         padding: 0px 30px;
     }
 
@@ -240,14 +292,27 @@ main>.left>button {
     }
 }
 
+@media (max-width:425px) {
+    main>.left>h1 {
+        font-size: 1.5rem;
+        padding-bottom: 0%;
+    }
+
+    main>.left>p {
+        font-size: 0.9rem;
+
+    }
+}
+
 @media (max-width:400px) {
-     main>.left>h1 {
+    main>.left>h1 {
         font-size: 1.2rem;
         padding-bottom: 0%;
     }
-      main>.left>p {
-        font-size: 0.6rem;
-        
+
+    main>.left>p {
+        font-size: 0.9rem;
+
     }
 
     main>.right>img {
@@ -255,14 +320,16 @@ main>.left>button {
         width: 300px;
     }
 }
+
 @media (max-width:380px) {
-      main>.left>h1 {
+    main>.left>h1 {
         font-size: 1.2rem;
         padding-bottom: 0%;
     }
-      main>.left>p {
+
+    main>.left>p {
         font-size: 0.6rem;
-        
+
     }
 }
 
@@ -277,7 +344,7 @@ main>.left>button {
 }
 
 .clients>.texts>h1 {
-    
+
     font-size: 3.5rem;
     font-weight: bolder;
     margin-top: 20px;
@@ -342,10 +409,24 @@ main>.left>button {
 
 }
 
+@media (max-width:420px) {
+    .clients>.texts>h1 {
+        font-size: 2rem;
+    }
+
+    .clients>.texts>p {
+        font-size: 1rem;
+        padding: 0px 30px;
+
+
+    }
+}
+
 @media (max-width:390px) {
-    .clients > .texts >h1{
+    .clients>.texts>h1 {
         font-size: 1.1rem;
     }
+
     .clients>.texts>p {
         font-size: 0.7rem;
         padding: 0px 30px;
@@ -408,8 +489,9 @@ main>.left>button {
 
 .community>.listOfcard>.cards>h1 {
     margin-bottom: 20px;
-    
+
 }
+
 .community>.listOfcard>.cards>p {
     font-size: small;
 
@@ -427,7 +509,7 @@ main>.left>button {
         justify-content: center;
         gap: 30px;
         padding: 0px 30px;
-        
+
 
     }
 
@@ -459,9 +541,10 @@ main>.left>button {
     }
 }
 
-@media (max-width:410px) {
+@media (max-width:423px) {
     .community>.heading>h1 {
-        font-size: 1rem;
+        font-size: 1.1rem;
+        /* background-color: red; */
         font-weight: bolder;
 
     }
@@ -471,19 +554,21 @@ main>.left>button {
     }
 
 }
+
 @media (max-width:341px) {
     .community>.heading>h1 {
         font-size: 0.9rem;
         font-weight: bolder;
 
     }
+
     .community>.heading>p {
         font-size: 0.9rem;
         font-weight: bolder;
 
     }
 
-    
+
 
 }
 
@@ -496,7 +581,8 @@ main>.left>button {
     gap: 50px;
     align-items: center;
 }
-.section3 .poster > img{
+
+.section3 .poster>img {
     width: 100%;
     object-fit: cover;
 }
@@ -533,78 +619,310 @@ main>.left>button {
 
 @media (max-width:1112px) {
     .section3>.text>h1 {
-       
+
         font-size: 2rem;
-        
+
     }
 }
+
 @media (max-width:1006px) {
     .section3 {
-       
+
         flex-direction: column;
         gap: 0px;
-        
+
     }
 
-    .section3 > .text{
+    .section3>.text {
         width: 100%;
     }
 }
+
 @media (max-width:513px) {
     .section3>.text>h1 {
-       
+
         font-size: 1.5rem;
-        
+
     }
 }
+
 @media (max-width:454px) {
     .section3>.text>h1 {
-       
+
         font-size: 1rem;
-        
+
     }
+
     .section3>.text>p {
-       
+
         font-size: 0.5rem;
-        
+
     }
 }
-@media (max-width:404px) {
+
+@media (max-width:415px) {
     .section3>.text>h1 {
-       font-weight: bolder;
-        font-size: 0.8rem;
-        
+        font-weight: bolder;
+        font-size: 0.9rem;
+
     }
+
     .section3>.text>p {
-       
-        font-size: 0.5rem;
-        
+
+        font-size: 0.8rem;
+
     }
 }
 
 /* ! section4 */
-.section4{
+.section4 {
+  overflow: hidden;
     display: flex;
     justify-content: space-evenly;
     align-items: center;
     padding: 30px 40px;
+    background-color: #EEF5FF;
 }
-.section4 > .left {
+
+.section4>.left {
     padding: 20px 30px;
 }
 
-.section4 > .MainRight > .right1 , .right2{
-   
+.section4 > .MainRight{
+    display: flex;
+}
+.section4>.MainRight>.right1,
+.right2 {
+    /* text-align: center; */
     padding: 20px 30px;
     display: flex;
+    flex-direction: column;
     gap: 20px;
+
+}
+
+.section4>.MainRight>.right1>.stats {
+    display: flex;
+    gap: 20px;
+}
+
+.section4>.MainRight>.right1>.stats>img {
+    width: 35px;
+    object-fit: contain;
+}
+
+.section4>.MainRight>.right2>.stats>img {
+    width: 35px;
+    object-fit: contain;
+}
+
+.section4>.MainRight>.right2>.stats {
+    display: flex;
+    gap: 20px;
+}
+
+@media (max-width:1192px) {
+    .section4>.left>h1 {
+        font-size: 1.5rem;
+    }
+
+    .section4>.left>p {
+        font-size: 0.8rem;
+    }
+
+}
+
+@media (max-width:1009px) {
+    .section4 {
+        padding: 10px 20px;
+    }
+
+    .section4>.MainRight>.right1,
+    .right2 {
+        /* text-align: center; */
+        padding: 10px 20px;
+        display: flex;
+        gap: 20px;
+
+    }
+
+
+}
+
+@media (max-width:966px) {
+    .section4 {
+        flex-direction: column;
+    }
+
+    .section4>.MainRight {
+        display: flex;
+    }
+
+    .section4>.MainRight>.right1>.stats>img {
+        width: 50px;
+
+    }
+
+    .section4>.MainRight>.right2>.stats>img {
+        width: 50px;
+
+    }
+}
+
+@media (max-width:800px) {
+    .section4>.MainRight>.right1>.stats>img {
+        width: 30px;
+
+    }
+
+    .section4>.MainRight>.right2>.stats>img {
+        width: 30px;
+
+    }
+}
+
+@media (max-width:720px) {
+
+    /* .section4 > .MainRight {
+        width: 100%;
+        flex-direction: column;
+        align-items: start;
+    } */
+    .section4>.MainRight>.right1 {
+        flex-direction: column;
+        justify-content: start;
+    }
+
+    .section4>.MainRight>.right2 {
+        flex-direction: column;
+        justify-content: start;
+    }
+}
+
+@media (max-width:580px) {
+    .section4>.left>h1 {
+        font-size: 1.2rem;
+        font-weight: 700;
+    }
+}
+
+@media (max-width:468) {
+    .section4>.left>h1 {
+        font-size: 0.9rem;
+        font-weight: 700;
+    }
+}
+
+@media (max-width:421px) {
+    
+    .section4>.MainRight>.right1 .content>p {
+        font-size: 0.8rem;
+        
+    }
+    
+    .section4>.MainRight>.right2 .content>p {
+        font-size: 0.8rem;
+    }
+}
+@media (max-width:399px) {
+    .section4>.MainRight>.right1 {
+        
+    }
+    
+    .section4>.MainRight>.right1 .content>p {
+        font-size: 0.7rem;
+        
+    }
+    
+    .section4>.MainRight>.right2 .content>p {
+        font-size: 0.7rem;
+    }
+}
+
+@media (max-width:348px) {
+    .section4>.left>h1 {
+        font-size: 0.8rem;
+        font-weight: 700;
+        
+    }
+    .section4>.left>p {
+        font-size: 0.7rem;
+        
+    }
+    .section4>.MainRight>.right1 , .right2 {
+        padding: 0px;
+    }
+    .MainRight{
+        padding: 10px 40px;
+    }
+}
+
+/* !Section 5 */
+.section5{
+    margin-top: 20px;
+    padding: 30px 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.section5 >.right{
+    width: 660px;
+    overflow: hidden;
     
 }
-.section4 > .MainRight > .right1   > .stats {
+.section5 >.right >.btn {
     display: flex;
-    gap: 20px;
+    justify-content: center;
+    align-items: center;
 }
-.section4 > .MainRight > .right2  > .stats {
-    display: flex;
-    gap: 20px;
+
+.section5 >.right >.btn > button{
+    padding: 10px 30px;
+    margin-top: 20px;
+    border: none;
+    background-color: green;
+    color: white;
+    cursor: pointer;
+    border-radius: 10px;
+}
+
+@media (max-width:1006px) {
+    .section5{
+        flex-direction: column;
+        gap: 10px;
+    }
+    .section5 > .right{
+        width: fit-content;
+    }
+}
+
+@media (max-width:500px) {
+    .section5 > .left > img{
+        width: 300px;
+    }
+    .section5 > .right > h1{
+        font-size: 20px;
+    }
+    .section5 > .right > p{
+        font-size: 15px;
+    }
+}
+@media (max-width:430px) {
+    .section5{
+        padding: 0px 0px;
+    }
+    .section5 > .right{
+        padding: 10px 20px;
+    }
+    .section5 > .right > h1{
+        font-size: 15px;
+        font-weight: 700;
+    }
+    .section5 > .right > p{
+        font-size: 10px;
+    }
+    /* .section5 > .right > .btn > button{
+        padding: 10px 20px;
+    } */
 }
