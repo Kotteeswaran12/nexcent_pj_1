@@ -335,7 +335,7 @@ main>.left>button {
 
 /* ! clients */
 
-.clients {
+.section1 {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -343,7 +343,7 @@ main>.left>button {
     text-align: center;
 }
 
-.clients>.texts>h1 {
+.section1>.texts>h1 {
 
     font-size: 3.5rem;
     font-weight: bolder;
@@ -351,13 +351,13 @@ main>.left>button {
     margin-bottom: 5px;
 }
 
-.clients>.texts>p {
+.section1>.texts>p {
     font-size: 1.1rem;
     margin-bottom: 20px;
     color: #AAAAAA;
 }
 
-.clients .clientLogo {
+.section1 .clientLogo {
     width: 100%;
 
     display: flex;
@@ -391,12 +391,12 @@ main>.left>button {
 
 
 @media (max-width:430px) {
-    .clients>.texts>h1 {
+    .section1>.texts>h1 {
         font-size: 2.5rem;
 
     }
 
-    .clients>.texts>p {
+    .section1>.texts>p {
         font-size: 1rem;
         margin-bottom: 5px;
 
@@ -410,11 +410,11 @@ main>.left>button {
 }
 
 @media (max-width:420px) {
-    .clients>.texts>h1 {
+    .section1>.texts>h1 {
         font-size: 2rem;
     }
 
-    .clients>.texts>p {
+    .section1>.texts>p {
         font-size: 1rem;
         padding: 0px 30px;
 
@@ -423,11 +423,11 @@ main>.left>button {
 }
 
 @media (max-width:390px) {
-    .clients>.texts>h1 {
+    .section1>.texts>h1 {
         font-size: 1.1rem;
     }
 
-    .clients>.texts>p {
+    .section1>.texts>p {
         font-size: 0.7rem;
         padding: 0px 30px;
 
@@ -436,11 +436,11 @@ main>.left>button {
 }
 
 /* ! community */
-.community {
+.section2 {
     margin-top: 30px;
 }
 
-.community>.heading {
+.section2 >.heading {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -448,35 +448,35 @@ main>.left>button {
     text-align: center;
 }
 
-.community>.heading>h1 {
+.section2>.heading>h1 {
     padding: 20px 40px;
     font-size: 2.5rem;
     font-weight: bolder;
 }
 
-.community>.heading>h1>span {
+.section2>.heading>h1>span {
     color: green;
 }
 
-.community>.heading>p {
+.section2>.heading>p {
     font-size: 1rem;
     color: #AAAAAA;
 }
 
 /* * Cards* */
 
-.community>.listOfcard {
+.section2>.listOfcard {
     display: flex;
     justify-content: space-evenly;
     align-items: center;
 }
 
-.community>.listOfcard {
+.section2>.listOfcard {
     margin-top: 40px;
     margin-bottom: 40px;
 }
 
-.community>.listOfcard>.cards {
+.section2>.listOfcard>.cards {
     text-align: center;
     padding: 20px 30px;
     width: 300px;
@@ -487,23 +487,23 @@ main>.left>button {
     cursor: pointer;
 }
 
-.community>.listOfcard>.cards>h1 {
+.section2>.listOfcard>.cards>h1 {
     margin-bottom: 20px;
 
 }
 
-.community>.listOfcard>.cards>p {
+.section2>.listOfcard>.cards>p {
     font-size: small;
 
 }
 
-.community>.listOfcard>.cards:hover {
+.section2>.listOfcard>.cards:hover {
     transform:
         scale(1.05);
 }
 
 @media (max-width:1000px) {
-    .community>.listOfcard {
+    .section2>.listOfcard {
 
         flex-direction: column;
         justify-content: center;
@@ -513,7 +513,7 @@ main>.left>button {
 
     }
 
-    .community>.listOfcard>.cards {
+    .section2>.listOfcard>.cards {
         width: 100%;
         height: fit-content;
 
@@ -524,45 +524,45 @@ main>.left>button {
 }
 
 @media (max-width : 560px) {
-    .community>.heading>h1 {
+    .section2>.heading>h1 {
         font-size: 2rem;
 
     }
 
-    .community>.listOfcard>.cards>h1 {
+    .section2>.listOfcard>.cards>h1 {
         font-size: 1.2rem;
     }
 }
 
 @media (max-width:520px) {
-    .community>.heading>h1 {
+    .section2>.heading>h1 {
         font-size: 1.5rem;
 
     }
 }
 
 @media (max-width:423px) {
-    .community>.heading>h1 {
+    .section2>.heading>h1 {
         font-size: 1.1rem;
         /* background-color: red; */
         font-weight: bolder;
 
     }
 
-    .community>.listOfcard>.cards>p {
+    .section2>.listOfcard>.cards>p {
         font-size: 0.8rem;
     }
 
 }
 
 @media (max-width:341px) {
-    .community>.heading>h1 {
+    .section2>.heading>h1 {
         font-size: 0.9rem;
         font-weight: bolder;
 
     }
 
-    .community>.heading>p {
+    .section2>.heading>p {
         font-size: 0.9rem;
         font-weight: bolder;
 
@@ -982,4 +982,37 @@ footer > .companyLogo > .logo{
 footer > .companyLogo > .logo > img{
     width:30px;
     object-fit: contain;
+}
+
+/* ! scrolling animation */
+.section1 , .section2 , .section3 , .section4 , .section5 , .section6 {
+    opacity: 0;
+    transform: translateX(-50%);
+    transition: all 600ms ease-in-out;
+}
+
+.section1.show{
+    opacity: 1;
+  
+      transform: translateX(0%);
+}
+.section2.show{
+    opacity: 1;
+      transform: translateX(0%);
+}
+.section3.show{
+    opacity: 1;
+      transform: translateX(0%);
+}
+.section4.show{
+    opacity: 1;
+      transform: translateX(0%);
+}
+.section5.show{
+    opacity: 1;
+      transform: translateX(0%);
+}
+.section6.show{
+    opacity: 1;
+      transform: translateX(0%);
 }
