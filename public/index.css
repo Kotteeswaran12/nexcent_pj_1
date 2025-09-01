@@ -392,7 +392,7 @@ main>.left>button {
 
 @media (max-width:430px) {
     .section1>.texts>h1 {
-        font-size: 2.5rem;
+        font-size: 1.7rem;
 
     }
 
@@ -410,8 +410,9 @@ main>.left>button {
 }
 
 @media (max-width:420px) {
-    .section1>.texts>h1 {
-        font-size: 2rem;
+    .section1 > .texts >h1 {
+        font-size: 1.5rem;
+      
     }
 
     .section1>.texts>p {
@@ -544,6 +545,12 @@ main>.left>button {
     .section2>.heading>h1 {
         font-size: 1.5rem;
 
+    }
+}
+
+@media (max-width:471px),(min-width:423px) {
+    .section2>.heading>h1 {
+        font-size: 1.3rem;
     }
 }
 
@@ -1051,12 +1058,17 @@ footer>.companyLogo>.socialMedia {
 }
 
 footer>.companyLogo>.socialMedia>.one {
-    width: 20px;
-    height: 20px;
-    background-color: #AAAAAA;
+    width: 30px;
+    height: 30px;
+    background-color: #666565;
     border-radius: 50%;
     transition: all 600ms ease;
     cursor: pointer;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
 }
 
 footer>.companyLogo>.socialMedia>.one:hover {
@@ -1069,6 +1081,7 @@ footer>.lists {
     justify-content: center;
     align-items: center;
     gap: 50%;
+
 }
 
 footer>.lists>.company>h3 {
@@ -1125,10 +1138,12 @@ footer>.message>.input>input {
     font-weight: bold;
 
 }
-footer>.message>.input>input::placeholder{
+
+footer>.message>.input>input::placeholder {
     color: white;
     opacity: 0.6;
 }
+
 footer>.message>.input>img {
     width: 20px;
     cursor: pointer;
@@ -1159,7 +1174,7 @@ footer>.message>.input>img {
         flex-direction: column;
         height: fit-content;
     }
-    
+
 
     footer>.companyLogo {
         justify-content: start;
@@ -1177,24 +1192,28 @@ footer>.message>.input>img {
         flex-direction: column;
         align-items: start;
     }
-     footer > .lists > .company{
+
+    footer>.lists>.company {
         width: 100%;
         border-bottom: 0.6px solid white;
         margin-bottom: 20px;
-     }
-     footer > .lists > .company > h3{
+    }
+
+    footer>.lists>.company>h3 {
         margin: 10px 0px;
         position: relative;
-     }
-     footer > .lists > .company > h3::after{
+    }
+
+    footer>.lists>.company>h3::after {
         content: '+';
         position: absolute;
         right: 10px;
-        
 
-     }
+
+    }
 
 }
+
 /* 
 @media (max-width:530px) {
     footer {
